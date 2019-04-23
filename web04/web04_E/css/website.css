@@ -1,0 +1,517 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"微軟正黑體";
+	text-decoration:none;
+}
+a{
+	color:rgba(255,204,51,1);	
+}
+a:hover{
+	color:rgba(255,255,51,1);	
+}
+a:active{
+	color:rgba(255,153,51,1);	
+}
+header h1{
+	position:fixed;
+	top:0;
+	padding:0 5vw;
+	line-height:3rem;
+	background:rgba(0,0,0,0.7);
+	width:90vw;
+	text-align:center;
+	z-index:100;
+}
+header nav{
+	position:fixed;
+	bottom:0;
+	padding:0 5vw;
+	line-height:2rem;
+	background:rgba(0,0,0,0.7);
+	width:90vw;
+	z-index:100;
+}
+header ul li {
+	display:inline-block;
+	padding-right:calc( 1.5rem + 3vw );	
+}
+main{
+	margin-top:3.5rem;	
+}
+footer{
+	position:fixed;
+	bottom:0;
+	line-height:2rem;
+	right:5vw;
+	color:rgba(255,204,51,1);
+	z-index:101;	
+}
+main p:nth-child(1){
+	margin-top:40vh;
+	color:rgba(255,255,255,1);
+	text-align:center;
+	font-size:calc( 1vw + 1rem );
+}
+main::after{
+	background-image:url(../images/kitchen.jpg);
+	
+}
+main::after,figure figcaption:nth-child(2)::after{
+	content:'';
+	display:block;
+	position:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100vh;
+	width:100vw;
+	top:0;
+	right:0;
+	z-index:-1000;
+		
+}
+header nav ul .active a{
+	border-bottom:0.15rem rgba(255,204,51,1) solid;	
+}
+figure figcaption:nth-child(2)::after{
+	background-image:url(../images/tea2.jpg) !important;
+	z-index:-800;	
+}
+main{
+	padding:0 5vw;
+	width:calc( 100vw - 15.5vw );	
+}
+article{
+	margin-top:1rem;	
+}
+main h2{
+	display:inline-block;
+	background:linear-gradient( to right , rgba(255,204,51,0.9),rgba(255,153,51,1), rgba(255,204,51,0.9));
+	color:rgba(255,255,255,1);
+	background-position-x:100rem;
+	min-width:5rem;
+	padding:0.1rem 2rem;
+	animation: linear 15s ani infinite;
+	border-radius:0.3rem;
+}
+main P:nth-child(2){
+	display:inline-block;
+	color:rgba(255,255,255,1);
+	line-height:2rem;
+	vertical-align:middle;
+}
+article h3{	
+	background:rgba(255,204,51,0.8);
+	width:15rem;
+	color:rgba(255,255,255,1);
+	padding:0.1rem 1rem;
+}
+article p:nth-child(2),article p:nth-child(3){
+	width:15rem;
+	padding:0.1rem 1rem;
+	background:rgba(255,255,255,0.9);
+	color:rgba(51,51,51,1);
+	text-align:center;
+	min-height:2rem;
+}
+article p:nth-child(3) a{
+	border:rgba(255,204,51,1) 0.15rem solid;
+	padding:0.1rem 0.5rem;
+}
+
+#menu ul{
+	display:flex;
+	flex-wrap:wrap;
+	padding:2vw;
+	position:relative;
+	text-align:center;	
+}
+#menu ul li{
+	display:inline-block;
+	position:relative;
+	flex:1;
+	min-width:15rem;
+	padding:calc( 1vw );
+}
+.name{
+	margin-top:calc( 5rem + 10vw );
+		
+}
+.price{
+	top:0;
+	position:absolute;
+	left:0;
+	right:0;
+	line-height:calc( 5rem + 10vw );
+	margin-top:0 !important;
+	margin:auto;
+	height:calc( 4.5rem + 10vw );
+	width:calc( 5rem + 10vw );
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:300%;
+	border-radius:300rem;
+	transition:.5s;
+	color:rgba(255,255,255,1);
+	font-size:1.5rem;
+}
+.price:hover{
+		background-size:150%;
+		transition:.5s;
+		font-size:0.5rem;
+}
+#menu p{
+	color:rgba(255,255,255,1);	
+}
+#menu ul:nth-child(2) li:nth-child(1) .price{
+	background-image:url(../images/beans.jpg);	
+}
+#menu ul:nth-child(2) li:nth-child(2) .price{
+	background-image:url(../images/grape.jpg);
+}
+#menu ul:nth-child(2) li:nth-child(3) .price{
+	background-image:url(../images/grape2.jpg);	
+}
+#menu ul:nth-child(5) li:nth-child(1) .price{
+	background-image:url(../images/noodle.jpg);	
+}
+#menu ul:nth-child(5) li:nth-child(2) .price{
+	background-image:url(../images/onion.jpg);
+}
+#menu ul:nth-child(5) li:nth-child(3) .price{
+	background-image:url(../images/soup.jpg);	
+}
+#menu ul:nth-child(7) li:nth-child(1) .price{
+	background-image:url(../images/steam.jpg)
+}
+#menu ul:nth-child(7) li:nth-child(2) .price{
+	background-image:url(../images/tea2.jpg)
+}
+#menu ul:nth-child(7) li:nth-child(3) .price{
+	background-image:url(../images/topdown.jpg);	
+}
+.name{
+	display:inline-block;
+	width:auto;
+	padding:0.1rem 0.5rem;
+	background:rgba(255,204,51,1);
+	color:rgba(255,255,255,1);	
+
+}
+.ingredients{
+	margin-top:0.5rem;
+	color:rgba(255,255,255,1);	
+}
+#menu h4{
+	text-align:left;
+	margin:0.1rem 0.5rem;
+	border-left:rgba(255,204,51,1) 0.75rem solid;
+	border-bottom:rgba(255,204,51,1) 0.15rem solid;
+	padding:0.2rem 0.5rem;
+	color:rgba(255,255,255,1);	
+}
+#menu:not(.show){
+	display:table-column;
+	transition:1s;
+	position:fixed;
+	top:-300rem;	
+}
+.show{
+	display:block;
+	transition:1s;
+	position:relative;
+	top:0;
+}
+#menu{
+	margin-top:1rem;
+	background:rgba(51,51,51,0.9);
+	padding:1rem;
+	text-align:center;
+	transition:1s;
+}
+a[href="#close-menu"]{
+	border:rgba(255,204,51,1) 0.15rem solid;
+	padding:0.2rem 0.5rem;	
+}
+section {
+	margin-top:1rem;
+	margin-bottom:5rem;	
+}
+section h3{
+	display:inline-block;
+	background:rgba(255,204,51,0.9);
+	color:rgba(255,255,255,1);
+	padding:0.1rem 2rem;
+	border-radius:0.3rem;
+}
+section ul{
+	margin-top:1rem;
+	display:flex;
+	}
+section ul li{
+	display:inline-block;
+	flex:1;
+	height:50vh;	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	transition:.5s;
+}
+section ul li:hover{
+	flex:10;
+	transition:.5s;
+}
+section ul li:nth-child(1){
+	background-image:url(../images/grape2.jpg);	
+}
+section ul li:nth-child(2){
+	background-image:url(../images/noodle.jpg);	
+}
+section ul li:nth-child(3){
+	background-image:url(../images/onion.jpg);	
+}
+section ul li:nth-child(4){
+	background-image:url(../images/soup.jpg);
+}
+section ul li:nth-child(5){
+	background-image:url(../images/steak.JPG);
+}
+
+img{
+	display:none;
+}
+figure{
+	display:inline-block;
+	color:rgba(255,255,255,1);
+	padding:0.1rem 0.5rem;	
+}
+.share{
+	margin-top:1rem;
+	text-align:right;
+}
+.share ul{
+	display:inline-block;
+	width:15rem;
+	
+}
+.share ul li:hover{
+	background:rgba(255,204,51,1);	
+}
+.share ul li:active{
+	background:rgba(255,255,255,1);	
+}
+.share ul li,.share ul li a{
+	width:2.5rem;
+	height:2.5rem;
+	display:inline-block;
+	border-radius:5rem;
+}
+.share ul li:nth-child(1) a{
+	background:url(../images/facebook.png.png) no-repeat center/cover;	
+}
+.share ul li:nth-child(2) a{
+	background:url(../images/instagram.png.png) no-repeat center/cover;	
+}
+.share ul li:nth-child(3) a{
+	background:url(../images/twitter.png.png) no-repeat center/cover;	
+}
+.share ul li:nth-child(4) a{
+	background:url(../images/facebook.png.png) no-repeat center/cover;	
+}
+.pagination{
+	display:none;
+}
+main nav{
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:calc( 10vh + 20vw);
+	margin-bottom:3rem;
+}
+
+main nav a{
+	flex:1;
+	flex-wrap:wrap;
+	min-width:calc( 15rem - 7.5vw);
+	height:calc( 30vh - 10vw );
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
+	text-align:center;
+	margin:1vw;
+	transition:.5s;
+
+}
+main nav a:hover{
+	background-size:200%;
+	
+}
+main nav a span{
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:rgba(102,102,102,1);
+	height:100vh;
+	width:100vw;
+	z-index:-800;
+	transition:.5s;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	opacity:0;
+	
+}
+main nav a:hover  span{
+	opacity:1;
+	line-height:30rem;
+}
+main nav a:nth-child(2) ,main nav a:nth-child(2) span{
+	background-image:url(../images/beans.jpg) ;	
+}
+main nav a:nth-child(3) ,main nav a:nth-child(3) span{
+	background-image:url(../images/grape.jpg);	
+}
+main nav a:nth-child(4) ,main nav a:nth-child(4) span{
+	background-image:url(../images/noodle.jpg);}
+main nav a:nth-child(5) ,main nav a:nth-child(5) span{
+	background-image:url(../images/grape2.jpg);}
+main nav a:nth-child(6) ,main nav a:nth-child(6) span{
+	background-image:url(../images/onion.jpg);}
+main nav a:nth-child(7) ,main nav a:nth-child(7) span{
+	background-image:url(../images/soup.jpg);}
+main nav a:nth-child(8),main nav a:nth-child(8) span{
+	background-image:url(../images/beans.jpg);}
+main nav a:nth-child(9),main nav a:nth-child(9) span{
+	background-image:url(../images/steak.JPG);}
+main nav a:nth-child(10) ,main nav a:nth-child(10) span{
+	background-image:url(../images/tea.jpg);}
+main nav a:nth-child(11) ,main nav a:nth-child(11) span{
+	background-image:url(../images/topdown.jpg);}
+.tab-panel{
+	margin-top:1rem;
+	background:rgba(0,0,0,0.6);
+	max-width:35rem;
+	transition:.5s;
+}
+.tabs{
+	background:rgba(51,51,51,0.7);
+		transition:.5s;
+}
+.tabs .active{
+	background:rgba(0,0,0,0.7);
+	padding:0.2rem 0.5rem;	
+	transition:.5s;
+	color:rgba(255,255,255,1);
+}
+.tabs .active a{
+	background:rgba(51,51,51,0.7);	
+	transition:.5s;
+}
+.tab-panel h2{
+	background:rgba(255,255,255,0);	
+}
+form{
+	padding:2vw;
+	text-align:right;	
+}
+fieldset{
+	border:0px;
+	padding:0.5rem;
+	text-align:left;	
+}
+fieldset label,fieldset input,textarea{
+	display:block;
+	color:rgba(255,255,255,1);
+}
+fieldset label{
+	font-size:1.25rem;
+	line-height:2rem;
+	width:100%;	
+}
+fieldset input,textarea{
+	width:95%;
+	margin:0.1rem 0.5rem;
+	line-height:1.75rem;
+	background:rgba(102,102,102,1);
+	border:0px;	
+}
+.tab-content:not(.active) *{
+	opacity:0;
+	height:0px;
+	pointer-events: none;
+}
+.tab-content:not(.active){
+	height:0px;	
+	opacity:0;
+	pointer-events: none;
+}
+.tab-panel{
+	margin:auto;
+	margin-top:2rem !important;
+}
+.tab-panel .tab-content form{
+	transition:.5s;
+	background:rgba(0,0,0,0.6);	
+}
+.tab-panel .active form{
+	background:rgba(51,51,51,0.8);
+	transition:.5s;
+}
+input[type="submit"]{
+	background:rgba(255,255,255,0);
+	border:rgba(255,204,51,1) 0.15rem solid;
+	padding:0.1rem 0.5rem;
+	color:rgba(255,255,255,1);
+	text-align:right;
+}
+input[type="submit"]:hover{
+	color:rgba(255,153,51,1);	
+}
+input[type="submit"]:active{
+	color:rgba(51,51,51,1);	
+}
+.success {
+	background:rgba(0,153,0,1);
+	}
+.alert{
+	background:rgba(173,0,0,1);	
+}
+.label{
+	text-align:center;
+	pointer-events: none;
+	color:rgba(255,255,255,1);
+	position:fixed;
+	top:48vh;
+	display:block;
+	width:90vw;
+	z-index:-200;
+	opacity:0;
+}
+.label:not(.hiding){
+	animation:linear live 5s ;	
+	top:48vh;
+	z-index:1000;
+	opacity:0;
+}
+@keyframes live{
+	0%{
+		opacity:0;
+	}
+	10%{
+		opacity:1;
+	}
+	90%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;	
+	}
+}
+@keyframes ani{
+	0%{
+		background-position-x:0;	
+	}
+	100%{
+		background-position-x:100;	
+	}
+}

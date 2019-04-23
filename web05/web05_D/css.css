@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-family:"微軟正黑體";	
+}
+em{
+	font-style:normal;
+	color:#F00;	
+}
+a{
+	color:#CCC;
+	text-decoration:none;
+}
+a:hover{
+	color:#FFF;	
+}
+a:active{
+	color:#666;	
+}
+.top{
+	padding:0 5vw;	
+}
+.top a{
+	padding-right:calc( 1rem + 3vw);	
+}
+ul li{
+	display:inline-block;	
+}
+.login{
+	margin-top:3rem !important;
+	background:rgba(255,255,255,1);
+	width:15rem;
+	min-height:20rem;
+	box-shadow:#333 0rem 0rem 1rem 0.1rem;
+	padding:1rem;
+	margin:1rem;	
+}
+.top{
+	line-height:2rem;
+	background:rgba(0,0,0,0.7);	
+}
+.mid{
+	padding:0 5vw;	
+}
+.mag{
+	margin:auto;	
+}
+.tec{
+	text-align:center;	
+}
+.text{
+	line-height:1.5rem;
+	display:block;
+	width:100%;
+	margin-top:0.5rem;
+	margin-bottom:0.5rem;		
+}
+.tb{
+	margin-top:0.5rem;
+	margin-bottom:0.5rem;	
+}
+.img{
+	width:15rem;
+	height:10rem;	
+}
+.me:nth-child(odd){
+	background:#CCC;
+}
+span{
+	display:inline-block;
+	width:9rem;	
+}
